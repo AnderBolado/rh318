@@ -1,5 +1,11 @@
 # BACKUP
 engine-backup --scope=all --mode=backup --file=BACKUP-full.tgz --log=BACKUP-full-$(date +%F).tgz --log=BACKUP-full-$(date +%F).log
 
+# CLEANUP
+engine-cleanup
+
 # RESTORE
 engine-backup --scope=all --mode=backup --file=BACKUP-full.tgz --log=BACKUP-full-$(date +%F).tgz --log=BACKUP-full-$(date +%F).log --restore-permissions
+
+# SETUP
+engine-setup
